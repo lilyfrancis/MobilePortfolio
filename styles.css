@@ -136,6 +136,10 @@
     text-decoration: none;
     color: #6070ff;
   }
+  .topnav-logo a {
+    text-decoration: none;
+    color: #6070ff;
+  }
 
   body {
     font-family: "Poppins", sans-serif;
@@ -143,7 +147,7 @@
 
   .headersec {
     background: url(./images/Headerback.png) no-repeat;
-    background-size: auto 100%;
+    background-size: 100% 100%;
     line-height: 1;
     margin-bottom: 30px;
     margin-left: 3px;
