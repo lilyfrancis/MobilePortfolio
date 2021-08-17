@@ -4282,25 +4282,23 @@ ul.topnav li.dropdownIcon {
     row-gap: 10px;
   }
 
-  .content-form form{
-    align-items:center;
-
+  .content-form form {
+    align-items: center;
   }
 
- 
 
   #fs-frm-inputs input {
     width: 327px;
     background: #fff;
     border: 1px solid #cfd8dc;
-    padding:15px;
+    padding: 15px;
     border-radius: 8px;
     height: 28px;
   }
 
   #fs-frm-inputs textarea {
     width: 327px;
-    padding:15px;
+    padding: 15px;
     background: #fff;
     border: 1px solid #cfd8dc;
     border-radius: 8px;
@@ -4332,12 +4330,9 @@ ul.topnav li.dropdownIcon {
     border-radius: 8px;
     color: #fff;
   }
+
+  .align-center {
+    align-items: center;
+    text-align: center;
+  }
 }
-
-.align-center{
-  align-items:center;
-  text-align:center;
-  /* margin:0 auto; */
-}
-
-
