@@ -3114,7 +3114,7 @@ ul.topnav li.dropdownIcon {
   body {
     font-family: "Poppins", sans-serif;
     background-color: #fff;
-    padding-left: 15px;
+    padding-left: 5px;
   }
 
   #cssmenu {
@@ -4282,22 +4282,16 @@ ul.topnav li.dropdownIcon {
     row-gap: 10px;
   }
 
-  .content-form form {
-    align-items: center;
-  }
-
   #fs-frm-inputs input {
-    width: 327px;
+    width: 270px;
     background: #fff;
     border: 1px solid #cfd8dc;
-    padding: 15px;
     border-radius: 8px;
     height: 28px;
   }
 
   #fs-frm-inputs textarea {
-    width: 327px;
-    padding: 15px;
+    width: 270px;
     background: #fff;
     border: 1px solid #cfd8dc;
     border-radius: 8px;
@@ -4328,10 +4322,5 @@ ul.topnav li.dropdownIcon {
     background: #2230d2;
     border-radius: 8px;
     color: #fff;
-  }
-
-  .align-center {
-    align-items: center;
-    text-align: center;
   }
 }
