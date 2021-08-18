@@ -37,6 +37,10 @@ Clone this repository
 - Twitter: [@ifnotlily](https://twitter.com/ifnotlily)
 - LinkedIn: [lilian-francis](https://linkedin.com/in/lilian-francis)
 
+👤 **Author2**
+
+- GitHub: [@Wuyep Abdul](https://www.github.com/wuyepabdul)
+
 
 ## 🤝 Contributing
 

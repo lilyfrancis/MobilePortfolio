@@ -3112,7 +3112,7 @@ ul.topnav li.dropdownIcon {
   body {
     font-family: "Poppins", sans-serif;
     background-color: #fff;
-    padding-left: 15px;
+    margin: 0 auto;
   }
 
   #cssmenu {
@@ -3256,7 +3256,8 @@ ul.topnav li.dropdownIcon {
     border-radius: 0 0 0 0;
     line-height: 1;
     margin-bottom: 30px;
-    margin-left: 0;
+    margin-left: 8px;
+    margin-right: 8px;
   }
 
   .about-flex-container {
@@ -3270,6 +3271,8 @@ ul.topnav li.dropdownIcon {
     border: 1px solid #fff;
     border-radius: 0 50px 0 0;
     flex-wrap: wrap;
+    margin-left: 12px;
+    margin-right: 12px;
   }
 
   .about-sec {
@@ -3318,7 +3321,7 @@ ul.topnav li.dropdownIcon {
     display: flex;
     flex-direction: row;
     width: 170px;
-    margin: 0;
+    margin-left: 5px;
     padding: 0;
     list-style-type: none;
     justify-content: space-between;
@@ -3358,7 +3361,6 @@ ul.topnav li.dropdownIcon {
     display: grid;
     width: auto;
     height: 100%;
-    margin-left: -4px;
     grid-template-rows: auto auto auto auto auto auto;
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
@@ -3367,7 +3369,6 @@ ul.topnav li.dropdownIcon {
     display: grid;
     width: auto;
     height: 100%;
-    margin-left: -4px;
     grid-template-rows: auto auto auto auto auto auto;
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
@@ -3842,7 +3843,6 @@ ul.topnav li.dropdownIcon {
     grid-column-end: 5;
     position: static;
     height: 76px;
-    left: 20px;
     top: 92px;
     font-style: normal;
     font-weight: normal;
@@ -4230,10 +4230,10 @@ ul.topnav li.dropdownIcon {
   }
 
   .contactform {
-    width: 398px;
+    width: 100%;
     height: 779px;
     background: #6070ff;
-    margin-left: -23px;
+    margin: 0 auto;
     border-radius: 70px 0 0 0;
   }
 
