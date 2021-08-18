@@ -60,8 +60,8 @@ ul.topnav li.dropdownIcon {
 
 .name {
   position: static;
-  margin-left: 5%;
-  width: 600px;
+  margin-left: 1%;
+  width: 98%;
   margin-top: 50px;
   font-style: normal;
   font-weight: bold;
@@ -3282,8 +3282,8 @@ ul.topnav li.dropdownIcon {
 
   .name {
     position: static;
-    margin-left: 0;
-    width: auto;
+    margin-left: 3%;
+    width: 92%;
     margin-top: 30px;
     font-style: normal;
     font-weight: bold;
@@ -3296,9 +3296,9 @@ ul.topnav li.dropdownIcon {
 
   .description {
     position: static;
-    width: auto;
+    width: 92%;
+    margin-left: 3%;
     height: 146px;
-    margin-left: 0;
     margin-top: 10px;
     font-style: normal;
     font-weight: normal;
@@ -3382,7 +3382,7 @@ ul.topnav li.dropdownIcon {
     background-size: cover;
     position: static;
     background-color: transparent;
-    width: auto;
+    width: 98%;
     height: 250px;
     border-radius: 8px;
   }
@@ -3520,7 +3520,7 @@ ul.topnav li.dropdownIcon {
     background: url(./images/SnapshootPortfolio2.png) no-repeat;
     background-size: cover;
     position: static;
-    width: auto;
+    width: 92%;
     height: 250px;
     border-radius: 8px;
   }
@@ -3658,7 +3658,7 @@ ul.topnav li.dropdownIcon {
     background: url(./images/SnapshootPortfolio3.png) no-repeat;
     background-size: cover;
     position: static;
-    width: auto;
+    width: 98%;
     height: 250px;
     border-radius: 8px;
   }
@@ -3796,7 +3796,7 @@ ul.topnav li.dropdownIcon {
     background: url(./images/SnapshootPortfolio4.png) no-repeat;
     background-size: cover;
     position: static;
-    width: auto;
+    width: 92%;
     height: 250px;
     border-radius: 8px;
   }
@@ -4065,7 +4065,7 @@ ul.topnav li.dropdownIcon {
 
   .namee {
     position: static;
-    width: 327px;
+    width: 310px;
     height: 101px;
     font-style: normal;
     font-weight: bold;
