@@ -1,6 +1,6 @@
 # My Portfolio
 
-> This is a portfolio project by microverse to test the use of Flexbox for Positioning and also grids, images and Background, 
+> This is a responsive portfolio project by microverse to test the use of Flexbox for Positioning and also grids, images and Background, 
 
 ![screenshot](images/screenshot.png)
 
@@ -20,11 +20,10 @@ To get a local copy up and running follow these simple example steps
 Github Account 
 
 ### Setup
-Set up and configure git on your system.
+Set up and configure git on your system
 
 ### Install
 Clone this repository
-
 
 
 
@@ -36,10 +35,6 @@ Clone this repository
 - GitHub: [@ifnotlily](https://github.com/ifnotlily)
 - Twitter: [@ifnotlily](https://twitter.com/ifnotlily)
 - LinkedIn: [lilian-francis](https://linkedin.com/in/lilian-francis)
-
-👤 **Author2**
-
-- GitHub: [@Wuyep Abdul](https://www.github.com/wuyepabdul)
 
 
 ## 🤝 Contributing
