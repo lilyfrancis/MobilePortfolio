@@ -22,7 +22,7 @@ input {
   background-color: #fff;
 }
 
-.last-2{
+.last-2 {
   display: flex;
   flex-direction: column;
 }
@@ -928,7 +928,7 @@ p {
     padding: 15px;
   }
 
-  .last-2{
+  .last-2 {
     display: flex;
     flex-direction: column;
   }
