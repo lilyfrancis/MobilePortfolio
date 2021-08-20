@@ -309,6 +309,7 @@ p {
   border: 1px solid #dfe1e6;
   padding: 10px 20px;
   outline: none;
+  transition: padding 3s;
   background-color: transparent;
   color: #396df5;
   border-radius: 12px;
@@ -327,6 +328,7 @@ p {
 
 .btn-T button:hover {
   background-color: #4053fc;
+  padding-left: 40px;
   color: #fff;
 }
 
