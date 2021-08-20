@@ -59,6 +59,34 @@ button[type="submit"] {
   height: 780px;
 }
 
+.rotate-logo {
+  display: inline-block;
+  width: 200px;
+  position: relative;
+  animation-name: rotate-logo;
+  animation-duration: 4s;
+}
+
+@keyframes rotate-logo {
+  0% {
+    left: 0px;
+  }
+
+  25% {
+    left: 75px;
+    font-size: 30px;
+  }
+
+  50% {
+    left: 150px;
+    font-size: 30px;
+  }
+
+  100% {
+    left: 0px;
+  }
+}
+
 .logo {
   font-family: "Poppins", sans-serif;
   font-style: normal;
