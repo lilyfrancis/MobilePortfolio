@@ -59,6 +59,34 @@ button[type="submit"] {
   height: 780px;
 }
 
+.rotate-logo {
+  display: inline-block;
+  width: 200px;
+  position: relative;
+  animation-name: rotate-logo;
+  animation-duration: 4s;
+}
+
+@keyframes rotate-logo {
+  0% {
+    left: 0;
+  }
+
+  25% {
+    left: 75px;
+    font-size: 30px;
+  }
+
+  50% {
+    left: 150px;
+    font-size: 30px;
+  }
+
+  100% {
+    left: 0;
+  }
+}
+
 .logo {
   font-family: "Poppins", sans-serif;
   font-style: normal;
@@ -281,6 +309,7 @@ p {
   border: 1px solid #dfe1e6;
   padding: 10px 20px;
   outline: none;
+  transition: padding 3s;
   background-color: transparent;
   color: #396df5;
   border-radius: 12px;
@@ -299,6 +328,7 @@ p {
 
 .btn-T button:hover {
   background-color: #4053fc;
+  padding-left: 40px;
   color: #fff;
 }
 
