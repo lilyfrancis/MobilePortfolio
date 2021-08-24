@@ -38,6 +38,12 @@ Clone this repository
 - Twitter: [@ifnotlily](https://twitter.com/ifnotlily)
 - LinkedIn: [lilian-francis](https://linkedin.com/in/lilian-francis)
 
+👤 **Author2**
+
+- GitHub: [@ifnotlily](https://github.com/benshidanny11)
+- Twitter: [@ifnotlily](https://twitter.com/bdanny)
+- LinkedIn: [lilian-francis](https://www.linkedin.com/in/daniel-urimubenshi-077162185/)
+
 
 ## 🤝 Contributing
 
