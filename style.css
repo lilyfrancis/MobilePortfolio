@@ -1,969 +1,815 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
 }
 
 body {
-  padding: 0;
-  margin: 0;
-  background-color: #e5e5e5;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #f5f5f5;
+  color: #272a31;
 }
 
-input {
+hr {
+  width: 35px;
+}
+
+.mobile-menu {
+  position: absolute;
   width: 100%;
-  padding: 15px;
-  margin-bottom: 20px;
-  border-radius: 8px;
-  border: none;
-  background-color: #fff;
+  height: 100vh;
+  background-color: #b1b1b1;
+  top: -110%;
+  left: 0;
+  z-index: 100;
+  transition: 500ms ease-in-out;
+  text-align: center;
 }
 
-.last-2 {
+.mobile-menu ul {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.logout-nav li,
+.nav-with-image li {
+  display: inline-block;
+  margin-right: 30px;
+  list-style: none;
+}
+
+.mobile-menu ul li {
+  position: relative;
+  list-style: none;
+  margin: 35px auto;
+  z-index: 999;
+}
+
+.program_button a {
+  display: none;
+}
+
+.time_venu a {
+  color: #1e2022;
+  font-weight: bolder;
+  transition: 200ms;
+}
+
+.logout-nav li a {
+  color: #d3d3d3;
+  font-size: 12px;
+  text-decoration: none;
+  transition: 400ms;
+}
+
+.nav-with-image li a {
+  color: #272a31;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.mobile-menu ul li a {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  color: #272a31;
+  text-decoration: none;
+  padding: 5px;
+  transition: 300ms ease-in-out;
+  cursor: pointer;
+}
+
+.hamburger i {
+  cursor: pointer;
+  transition: 200ms;
+  transform: scale(0.98);
+}
+
+.program_button a:hover,
+.time_venu a:hover,
+.mobile-menu ul li a:hover {
+  color: #ec5242;
+  transform: scale(1.03);
+}
+
+.festival_programs i,
+.festival_programs h4 {
+  align-self: center;
+  justify-self: center;
+}
+
+.festival_programs i {
+  color: #fff;
+  cursor: pointer;
+  transition: 300ms ease-in;
+}
+
+.go-up i {
+  color: #e8240e;
+}
+
+.time_venu h2 i,
+.time_venu h3 i {
+  margin-right: 10px;
+}
+
+.time_venu p i {
+  margin-right: 20px;
+}
+
+.program:hover i,
+#main-nav li a:hover,
+.hamburger i:hover {
+  color: #ec5242;
+}
+
+.mobile-menu img {
+  position: absolute;
+  top: 25px;
+  right: 30px;
+  z-index: 3;
+  cursor: pointer;
+}
+
+footer .footer_copy img {
+  width: 50px;
+  height: 50px;
+}
+
+.mobile-menu img:hover {
+  animation: rotateX 300ms ease-in-out;
+  color: #ec5242;
+}
+
+.hamburger {
+  width: 80%;
+  margin: 0 auto;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.guest_list .guest img {
+  position: relative;
+  width: 120px;
+  z-index: 3;
+}
+
+#main-nav .nav-with-image {
+  height: 70px;
+  width: 80%;
+  margin: 0 auto;
+  background-color: #f5f5f5;
+  display: none;
+}
+
+.logout-nav {
+  background-color: #272a31;
+  height: 30px;
+  display: none;
+}
+
+.logout-nav nav {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#main-nav .nav-with-image img {
+  width: 50px;
+  padding-top: 10px;
+}
+
+.nav-with-image li .current {
+  color: #ec5242;
+}
+
+#main-nav .nav-with-image i {
+  margin-top: 70px;
+}
+
+#header_section {
+  background-image:
+    linear-gradient(
+      rgba(255, 255, 255, 0.7),
+      rgba(191, 188, 188, 0.6)
+    ),
+    url(./images/bg_festival.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: auto;
+  padding-bottom: 20px;
+}
+
+.festival_header,
+.about_header_section .festival_header {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.about_header_section .welcome,
+#header_section .welcome {
+  color: #ec5242;
+  font-weight: normal;
+  font-size: 23px;
+  padding-top: 60px;
+}
+
+.about_header_section .title,
+#header_section .title {
+  color: #e8240e;
+  text-transform: uppercase;
+  text-shadow: 3px 2px 2px rgba(140, 136, 136, 0.6);
+  font-size: 40px;
+  font-weight: bolder;
+  line-height: 1.2;
+  padding: 10px 0;
+}
+
+.about_header_section .introduction {
+  background-color: #fff;
+  border-radius: 0;
+  padding: 10px;
+}
+
+#header_section .introduction {
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  padding: 10px;
+  color: #333;
+  font-weight: bold;
+  margin: 40px 0 20px 0;
+  border-radius: 10px;
+}
+
+.time_venu {
+  line-height: 2;
+  color: #333;
+}
+
+.time_venu h2 {
+  font-family: 'cocogoose', sans-serif;
+}
+
+.time_venu h3 {
+  line-height: 1.2;
+}
+
+#project_schedule,
+#about_project_schedule {
+  width: 100%;
+  height: 100%;
+  background-color: #272a31;
+  padding-top: 30px;
+}
+
+#project_schedule {
+  background-image: url(./images/program-x.png);
+}
+
+#project_schedule .main-program,
+#wesing_guests .main-program,
+#about_project_schedule .main-program,
+#previous_events .main-program,
+#festival_partners .main-program {
   display: flex;
   flex-direction: column;
-}
-
-input::placeholder {
-  color: #b3bac5;
-  font-size: 15px;
-}
-
-textarea {
-  width: 100%;
-  padding: 15px;
-  border-radius: 8px;
-  border: none;
-  background-color: #fff;
-}
-
-button[type="submit"] {
-  margin-top: 16px;
-  padding: 12px 16px;
-  border-radius: 8px;
-  font-size: 17px;
-  border: none;
-  background-color: #fff;
-  color: #6070ff;
-}
-
-#header {
-  width: 100%;
-  background-color: #fff;
-  background-image: url(image/headline-back-desktop.png);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  height: 780px;
-}
-
-.rotate-logo {
-  display: inline-block;
-  width: 200px;
-  position: relative;
-  animation-name: rotate-logo;
-  animation-duration: 4s;
-}
-
-@keyframes rotate-logo {
-  0% {
-    left: 0;
-  }
-
-  25% {
-    left: 75px;
-    font-size: 30px;
-  }
-
-  50% {
-    left: 150px;
-    font-size: 30px;
-  }
-
-  100% {
-    left: 0;
-  }
-}
-
-.logo {
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 15px;
-  line-height: 20px;
-  color: #6070ff;
-}
-
-.humberger {
-  margin-top: 3rem;
-}
-
-.logo a {
-  text-decoration: none;
-}
-
-.header-container {
-  display: flex;
-  justify-content: space-between;
-  width: 90%;
+  justify-content: center;
   align-items: center;
-  margin: 0 auto;
-  height: 4rem;
+  line-height: 2.5;
 }
 
-.navbar {
-  display: flex;
-  align-items: center;
-  line-height: 4rem;
-  height: 100%;
-  margin-top: -2.7rem;
-}
-
-.d-navbar {
-  display: flex;
-  list-style-type: none;
-  height: 100%;
-}
-
-.d-navbar li {
-  margin-left: 1rem;
-}
-
-.d-navbar li a {
-  color: #6070ff;
-}
-
-.lang i {
-  font-size: 15px;
-  color: #253858;
-}
-
-.a-navbar {
-  text-decoration: none;
-  height: 2em;
-  padding: 0.5em 1em;
-}
-
-.navbar .humberger i {
+.main-program h3 {
+  color: #fff;
   font-size: 22px;
-  font-weight: 600;
-  color: #6070ff;
+  font-family: 'cocogoose', sans-serif;
 }
 
-#main-container {
-  position: relative;
+#project_schedule hr,
+#wesing_guests hr,
+#about_project_schedule hr,
+#previous_events hr,
+#festival_partners hr {
+  border: 0;
+  border-top: 1px solid #ec5242;
 }
 
-.headline {
-  height: 100%;
-  width: 100%;
-}
-
-.headline-main-container {
-  width: 90%;
-  margin: 0 auto;
-  padding-top: 7rem;
-}
-
-.namee {
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 48px;
-  line-height: 52px;
-  text-align: left;
-  letter-spacing: 0.37px;
-  color: #172b4d;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
-.description {
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  max-width: 600px;
-  font-size: 16px;
-  line-height: 24px;
-  color: #344563;
-  text-align: left;
-}
-
-.connect {
-  margin-top: 1rem;
-}
-
-.connect h2 {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  color: #6070ff;
-  padding: 0.5rem 0;
-}
-
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  gap: 16px;
-  padding-top: 12px;
-  padding-bottom: 12px;
-}
-
-#naturesec {
-  width: 100%;
-}
-
-.boxes {
-  width: 100%;
+.festival_programs,
+.guest_list {
   display: grid;
   grid-template-columns: 1fr;
-  background-color: #e5e5e5;
+  gap: 15px;
+  width: 100%;
+  margin-top: 25px;
 }
 
-.box {
+.festival_programs .program {
+  width: 95%;
+  margin: 0 auto;
+  background-color: #f5f5f520;
   display: flex;
-  flex-direction: column;
-  width: 80%;
-  max-width: 596px;
-  padding: 16px;
-  margin: 25px auto;
-  border-radius: 16px;
-  border: 1px solid #dfe1e6;
-  box-sizing: border-box;
+  gap: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 4px 4px 12px 0 rgba(69, 66, 66, 0.75);
+  -webkit-box-shadow: 4px 4px 12px 0 rgba(69, 66, 66, 0.75);
+  -moz-box-shadow: 4px 4px 12px 0 rgba(69, 66, 66, 0.75);
+  transition: 300ms ease-in-out;
+}
+
+.festival_programs .program_2 {
+  gap: 27px;
+}
+
+.festival_programs .program:hover {
+  border: 2px solid #fff;
+  transform: scale(0.98);
+}
+
+.festival_programs h4 {
+  color: #ec5242;
+}
+
+.festival_programs p {
+  color: #fff;
+  font-size: 14px;
+}
+
+.program_button {
+  text-align: center;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.program_button button {
+  padding: 20px;
+  background-color: #ec5242;
+  color: #fff;
+  border: 0;
+  outline: 0;
+  font-size: 16px;
+  border-radius: 3px;
+  transition: 300ms ease-in-out;
+  cursor: pointer;
+}
+
+.program_button button:hover {
+  background: linear-gradient(to right, #301917, #dd7569);
+}
+
+.program_button button:focus {
+  background-color: #e8240e;
+}
+
+#wesing_guests {
   background-color: #fff;
-  justify-content: center;
-  align-items: center;
 }
 
-.Tonic {
-  width: 100%;
+#wesing_guests .main-program h3 {
+  color: #272a31;
+  margin-top: 20px;
+  font-family: 'cocogoose', sans-serif;
 }
 
-.Tonic img {
-  max-width: 100%;
+.guest_list {
+  gap: 50px;
+  padding-bottom: 30px;
 }
 
-h4 {
-  color: #172b4d;
-  font-weight: bold;
-  font-size: 32px;
-  line-height: 44px;
-  font-family: "Poppins", sans-serif;
-  margin: 12px 0;
-}
-
-.menu {
-  display: flex;
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  color: #344563;
-}
-
-.language ul li {
-  background-color: #ebebff;
-  border-radius: 8px;
-  color: #6070ff;
-  padding: 5px 8px;
-}
-
-.menu-1 {
-  color: #344563;
-}
-
-.menu-2 {
-  color: #7a869a;
-}
-
-.menu ul li {
-  display: inline-block;
-  padding: 0 5px;
-}
-
-p {
-  color: #344563;
-  font-family: "Poppins", sans-serif;
-}
-
-.knowledges {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.knowledges .knw {
-  width: 90%;
+.guest_list .guest {
+  width: 95%;
   margin: 0 auto;
   display: flex;
+  gap: 30px;
+}
+
+.guest aside {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.guest aside h4 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.guest aside p {
+  color: #ec5242;
+  font-style: italic;
+  padding-bottom: 5px;
+}
+
+.guest aside span {
+  font-size: 14px;
+  color: #272a31;
+}
+
+.guest_list .guest-hidden {
+  display: none;
+}
+
+.go-up {
+  border: 1px solid #333;
+  border-radius: 50%;
+  padding: 5px 10px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  transition: 300ms;
+  display: none;
+}
+
+.about_header_section {
+  background-image:
+    linear-gradient(
+      rgba(253, 253, 253, 0.7),
+      rgba(218, 218, 218, 0.8)
+    ),
+    url(./images/bg-about.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: auto;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+#about_project_schedule {
+  background-color: #fff;
+  padding-bottom: 50px;
+}
+
+#about_project_schedule .main-program h3 {
+  color: #272a31;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 60px;
+  font-size: 25px;
+  text-align: center;
+  font-family: 'cocogoose', sans-serif;
+  line-height: 1.6;
+}
+
+footer .final-parag p {
+  font-size: 14px;
+  color: #333;
+}
+
+#about_project_schedule p,
+#about_project_schedule .festival_logo {
+  padding-top: 20px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+#about_project_schedule p {
+  text-align: center;
+}
+
+#about_project_schedule .hide-parag {
+  padding-top: 0;
+  display: none;
+}
+
+#about_project_schedule .festival_logo {
+  display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  margin: 0 auto;
+  border: 1px solid rgba(181, 178, 178, 0.597);
+  margin-top: 30px;
+  padding: 10px;
+  height: 200px;
 }
 
-.btn-T button {
-  border: 1px solid #dfe1e6;
-  padding: 10px 20px;
-  outline: none;
-  transition: padding 3s;
-  background-color: transparent;
-  color: #396df5;
-  border-radius: 12px;
-  box-sizing: border-box;
-  margin: 22px 0;
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-size: 18px;
-  border-color: #7f8cff;
+#about_project_schedule .festival_logo img {
+  min-width: 300px;
+  max-width: 500px;
+  min-height: 300px;
+  max-height: 500px;
 }
 
-.btn-T button:focus {
-  background-color: #2230d2;
-  color: #fff;
-}
-
-.btn-T button:hover {
-  background-color: #4053fc;
-  padding-left: 40px;
-  color: #fff;
-}
-
-.aboutMe {
-  width: 100%;
-  padding-top: 5rem;
+#previous_events {
   background-color: #fff;
-  padding-left: 12px;
-}
-
-.knowledges .knw .lang {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-bottom: 1.5rem;
-  position: relative;
-}
-
-.knowledges .knw .lang::before {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 1px;
-  background-color: rgb(190, 190, 190);
-}
-
-.lang h3 {
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 24px;
-  color: #000;
-}
-
-.lang-b {
-  border-bottom: 1px solid #dfe1e6;
-}
-
-.knowledges .knw ul {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  flex-direction: column;
-  margin-top: 1rem;
-}
-
-.knowledges .knw ul li {
-  width: 100%;
-  background-color: rgb(248, 248, 248);
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  border-radius: 0.5rem;
-}
-
-.knowledges .knw ul li img {
-  margin-left: 0.8rem;
-}
-
-.knowledges .knw ul li h4 {
-  font-size: 1rem;
-  margin-left: 1rem;
-}
-
-.contact-section {
-  margin-top: 114px;
-  padding: 113px 24px;
-  background-color: #fff;
-  background-image: url(image/contact-back-desktop.png);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  width: 100%;
-}
-
-.contact-section form h3 {
-  font-size: 40px;
   text-align: center;
-  color: #fff;
-  font-weight: 700;
+  padding: 90px 0;
+  border-top: 1px solid rgba(158, 156, 156, 0.83);
 }
 
-.contact-section form p {
-  margin-top: 12px;
-  font-size: 20px;
-  line-height: 28px;
-  text-align: center;
-  color: #fff;
-  font-weight: 400;
+#previous_events .main-program h3 {
+  font-family: 'cocogoose', sans-serif;
+  color: #272a31;
+  width: 80%;
+  margin: 0 auto;
+  line-height: 1.6;
+  font-size: 26px;
+  font-weight: bold;
 }
 
-.background {
-  background-color: #fff;
+#previous_events p {
+  font-size: 15px;
+  width: 80%;
+  margin: 40px auto;
 }
 
-.contact-form {
+#previous_event_card {
   display: flex;
   flex-direction: column;
-  margin: 67px 0;
-  padding: 0;
+  gap: 20px;
 }
 
-@media screen and (max-width: 600px) {
-  .d-navbar {
-    display: none;
-  }
-
-  .info1 {
-    display: none;
-  }
-
-  .info3 {
-    display: none;
-  }
-
-  .Tonic-menu1 .menu1-1 {
-    display: none;
-  }
-
-  .Tonic-menu1 .menu1-2 {
-    display: none;
-  }
-
-  .Tonic-menu1 .menu1-3 {
-    display: none;
-  }
-
-  .Tonic-menu3 .menu3-1 {
-    display: none;
-  }
-
-  .Tonic-menu3 .menu3-2 {
-    display: none;
-  }
-
-  .Tonic-menu3 .menu3-3 {
-    display: none;
-  }
-
-  .language1 .l2 {
-    display: none;
-  }
-
-  h5 {
-    display: none;
-  }
-
-  h6 {
-    display: none;
-  }
-
-  address {
-    display: none;
-  }
-
-  .Tonic .img1 {
-    display: none;
-  }
+#previous_event_card .event_card {
+  width: 85%;
+  margin: 0 auto;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  gap: 15px;
+  transition: 300ms ease-in;
+  cursor: pointer;
 }
 
-@media screen and (min-width: 600px) {
-  .humberger {
-    display: none;
-  }
-
-  .navbar {
-    margin-top: -2rem;
-  }
-
-  .info1 {
-    display: none;
-  }
-
-  .info3 {
-    display: none;
-  }
-
-  .Tonic-menu1 .menu1-1 {
-    display: none;
-  }
-
-  .Tonic-menu1 .menu1-2 {
-    display: none;
-  }
-
-  .Tonic-menu1 .menu1-3 {
-    display: none;
-  }
-
-  .Tonic-menu3 .menu3-1 {
-    display: none;
-  }
-
-  .Tonic-menu3 .menu3-2 {
-    display: none;
-  }
-
-  .Tonic-menu3 .menu3-3 {
-    display: none;
-  }
-
-  .language1 .l2 {
-    display: none;
-  }
-
-  h5 {
-    display: none;
-  }
-
-  h6 {
-    display: none;
-  }
-
-  address {
-    display: none;
-  }
-
-  .Tonic .img1 {
-    display: none;
-  }
-
-  body {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-  }
-
-  .header {
-    height: 100%;
-  }
-
-  .img {
-    width: 100%;
-  }
-
-  .img_ignore {
-    width: 100%;
-  }
+#previous_event_card .event_card:hover {
+  box-shadow: 4px 4px 12px 0 rgba(69, 66, 66, 0.75);
+  -webkit-box-shadow: 4px 4px 12px 0 rgba(69, 66, 66, 0.75);
+  -moz-box-shadow: 4px 4px 12px 0 rgba(69, 66, 66, 0.75);
+  transform: translateY(-10px);
 }
 
-@media screen and (min-width: 1000px) {
-  #main-container {
-    width: 100%;
+#previous_event_card .card_1 {
+  background-image:
+    linear-gradient(
+      rgba(255, 0, 0, 0.4),
+      rgba(255, 0, 0, 0.4)
+    ),
+    url(./images/testimonyK_festival.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+#previous_event_card .card_2 {
+  background-image:
+    linear-gradient(
+      rgba(255, 0, 0, 0.4),
+      rgba(255, 0, 0, 0.4)
+    ),
+    url(./images/testimonyH.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+#previous_event_card .event_card h5 {
+  font-size: 30px;
+}
+
+footer .footer_copy h6 {
+  font-size: 16px;
+}
+
+#previous_event_card .event_card h6 {
+  font-size: 15px;
+}
+
+#festival_partners {
+  background: #272a31;
+  text-align: center;
+}
+
+#festival_partners .main-program {
+  padding: 30px 0;
+}
+
+#festival_partners .partners {
+  display: flex;
+  width: 90%;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 25px;
+}
+
+#festival_partners .partners img {
+  width: 30%;
+}
+
+footer {
+  background-color: #fff;
+  display: flex;
+  height: 130px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  gap: 30px;
+  padding: 30px 0;
+}
+
+footer .footer_copy {
+  display: flex;
+  align-items: center;
+}
+
+@media all and (min-width: 768px) {
+  .hamburger {
+    display: none;
   }
 
-  body {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-  }
-
-  .header {
-    height: 100%;
-  }
-
-  .navbar {
+  .logout-nav {
     display: block;
-    margin-top: -2.7rem;
   }
 
-  .d-navbar {
+  #main-nav .nav-with-image {
     display: flex;
-    list-style-type: none;
-    height: 100%;
-  }
-
-  .header-container {
-    padding-top: 10px;
-    padding-left: 90px;
-    padding-right: 90px;
-  }
-
-  .headline {
-    height: 100%;
-    width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin: 0 auto;
-    padding-top: 3rem;
-    background-position: center;
-  }
-
-  .headline-main-container {
-    padding-left: 150px;
-    padding-top: 170px;
-    padding-bottom: 100px;
-    margin: 0;
-    width: 100%;
-  }
-
-  #naturesec {
-    width: 100%;
-  }
-
-  .namee {
-    width: 100%;
-    height: 122px;
-    font-size: 48px;
-    line-height: 60px;
+    justify-content: space-between;
     align-items: center;
-    letter-spacing: 0.37px;
-    display: inline-block;
-    padding: 0;
   }
 
-  .boxes {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr;
-    background-color: #e5e5e5;
-  }
-
-  .description {
-    max-width: 100%;
-    height: 98px;
-    font-size: 23px;
-    line-height: 28px;
-    color: #344563;
-    display: inline-block;
-    padding-top: 30px;
-    width: 70%;
-  }
-
-  .box {
+  #header_section,
+  .about_header_section {
     display: flex;
     flex-direction: column;
-    max-width: 1155px;
-    padding: 16px;
-    margin: 25px auto;
-    border-radius: 16px;
-    border: 1px solid #dfe1e6;
-    box-sizing: border-box;
-    background-color: #fff;
     justify-content: center;
     align-items: center;
-    height: 496px;
-  }
-
-  h5 {
-    width: 496px;
-    height: 46px;
-    font-family: "Poppins", sans-serif;
-    font-style: normal;
-    font-weight: bolder;
-    font-size: 40px;
-    line-height: 52px;
-    color: #091e42;
-    padding: 48px 46px 20px 48px;
-  }
-
-  h6 {
-    width: 496px;
-    height: 46px;
-    font-family: "Poppins", sans-serif;
-    font-style: normal;
-    font-weight: bolder;
-    font-size: 40px;
-    line-height: 52px;
-    color: #091e42;
-    padding: 48px 46px 20px 48px;
-  }
-
-  address {
-    width: 496px;
-    height: 46px;
-    font-family: "Poppins", sans-serif;
-    font-style: normal;
-    font-weight: bolder;
-    font-size: 40px;
-    line-height: 52px;
-    color: #091e42;
-    padding: 48px 46px 20px 48px;
-  }
-
-  .Tonic {
-    width: 100%;
-  }
-
-  .Tonic img {
-    width: 544px;
-    height: 448px;
-    padding: 24px 22px 24px 46px;
-    border-radius: 8px;
-  }
-
-  .Tonic .img1 {
-    width: 544px;
-    height: 448px;
-    padding: 24px 22px 24px 46px;
-    border-radius: 8px;
-  }
-
-  .box-div {
-    display: flex;
-  }
-
-  .third {
-    display: flex;
-    flex-direction: row-reverse;
-  }
-
-  .last {
-    display: flex;
-    flex-direction: row-reverse;
-  }
-
-  .menu1 {
-    display: flex;
-    font-family: "Poppins", sans-serif;
-    height: 24px;
-    padding-top: 20px;
-    padding-bottom: 32px;
-    padding-left: 48px;
-    font-size: 18px;
-    line-height: 24px;
-  }
-
-  .menu3 {
-    display: flex;
-    font-family: "Poppins", sans-serif;
-    height: 24px;
-    padding-top: 20px;
-    padding-bottom: 32px;
-    font-size: 18px;
-    line-height: 24px;
-  }
-
-  .menu1-1 {
-    color: #344563;
-    width: 43px;
-    font-weight: normal;
-    font-style: normal;
-  }
-
-  .menu1-2 {
-    color: #6b778c;
-    width: 150px;
-    font-weight: normal;
-    font-style: normal;
-  }
-
-  .menu1-3 {
-    color: #6b778c;
-    width: 38px;
-    font-weight: normal;
-    font-style: normal;
-  }
-
-  .menu3-1 {
-    color: #344563;
-    font-weight: normal;
-    font-style: normal;
-  }
-
-  .menu3-2 {
-    color: #6b778c;
-    width: 150px;
-    font-weight: normal;
-    font-style: normal;
-  }
-
-  .menu3-3 {
-    color: #6b778c;
-    width: 38px;
-    font-weight: normal;
-    font-style: normal;
-  }
-
-  .menu1 ul li {
-    display: inline-block;
-    padding: 0 5px;
-  }
-
-  .menu3 ul li {
-    display: inline-block;
-    padding: 0 5px;
-  }
-
-  .info1 {
-    width: 496px;
-    height: 53px;
-    font-size: 24px;
-    line-height: 24px;
-    font-family: "Poppins", sans-serif;
-    font-weight: normal;
-    color: #344563;
-    padding-top: 32px;
-    padding-bottom: 24px;
-    padding-left: 48px;
-  }
-
-  .info3 {
-    width: 496px;
-    height: 53px;
-    font-size: 16px;
-    line-height: 24px;
-    font-family: "Poppins", sans-serif;
-    font-weight: normal;
-    color: #344563;
-    padding-top: 32px;
-    padding-bottom: 24px;
-  }
-
-  .language1 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding-top: 59px;
-  }
-
-  .description1 {
-    width: 82%;
-    padding-top: 12px;
-  }
-
-  pre {
-    color: #253858;
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 44px;
-    font-family: "Poppins", sans-serif;
-    margin: 12px 0;
-  }
-
-  .java {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .box3 {
-    order: -1;
-  }
-
-  .box2 {
-    order: 0;
-  }
-
-  .box1 {
-    order: 1;
-  }
-
-  .box4 {
-    order: 1;
-  }
-
-  .aboutMe {
-    width: 100%;
-    padding-top: 5rem;
-    background-color: #fff;
-  }
-
-  .main-headline1 {
-    width: 50%;
-    padding-left: 180px;
-  }
-
-  .headline-main-container1 {
-    display: flex;
-  }
-
-  .languages .knw ul {
-    display: flex;
-    flex-direction: row;
-    gap: 34px;
-    padding: 60px 0;
-  }
-
-  .lang i {
-    padding-left: 280px;
-  }
-
-  .main-knowledges {
-    padding-top: 34px;
-    padding-left: 160px;
-  }
-
-  .knowledges .knw ul {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    margin-top: 1rem;
-    flex-direction: row;
-  }
-
-  .contact-section form p {
     margin: 0 auto;
-    font-size: 20px;
-    line-height: 28px;
+  }
+
+  .festival_header,
+  .about_header_section .festival_header {
+    width: 80%;
+  }
+
+  .about_header_section .welcome,
+  #header_section .welcome {
+    font-size: 28px;
+  }
+
+  .about_header_section .title,
+  .about_header_section .introduction {
+    margin: 20px auto;
+  }
+
+  .about_header_section .title,
+  #header_section .title {
+    font-size: 50px;
+    width: 80%;
+  }
+
+  .about_header_section .introduction,
+  #header_section .introduction {
+    width: 70%;
+    padding: 15px;
+  }
+
+  .festival_programs {
+    grid-template-columns: repeat(2, 1fr);
+    width: 80%;
+    margin-top: 40px;
+    column-gap: 10px;
+    display: flex;
+  }
+
+  .festival_programs .program {
+    flex-direction: column;
     text-align: center;
-    color: #fff;
-    font-weight: 400;
-    width: 35%;
+    justify-content: space-between;
+    padding: 30px 15px;
   }
 
-  .coverUl {
-    width: 447px;
-    margin: 0 auto;
+  .program_button a {
+    display: block;
+    color: #d3d3d3;
+    text-transform: uppercase;
+    transition: 400ms;
   }
 
-  input[type="text"] {
-    width: 100%;
-    padding: 15px;
-    border-radius: 0;
-    border: none;
-    background-color: #fff;
+  .program_button button {
+    display: none;
   }
 
-  input[type="email"] {
-    border-radius: 0;
-  }
-
-  input[type="submit"] {
-    padding: 12px 16px;
-    border-radius: 0;
-    font-size: 17px;
-    border: none;
-    background-color: #fff;
-    color: #6070ff;
-  }
-
-  .subm {
-    margin: 0 auto;
-  }
-
-  .languages .knw ul li {
-    padding: 15px;
-  }
-
-  .last-2 {
+  #project_schedule {
+    height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
-  .skills .fas {
-    padding-left: 353px;
+  .guest_list {
+    grid-template-columns: repeat(2, 1fr);
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 70px;
+  }
+
+  .guest_list .guest-hidden {
+    display: flex;
+  }
+
+  #festival_partners .partners {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  footer .footer_copy img {
+    width: 100px;
+    height: 70px;
+  }
+
+  .end-foot {
+    padding-left: 40px;
+    font-size: 17px;
+  }
+
+  #festival_partners .partners img {
+    width: 16%;
+  }
+
+  #about_project_schedule p {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  #about_project_schedule .festival_logo {
+    width: 50%;
+    margin: 30px auto;
+  }
+
+  #about_project_schedule .hide-parag {
+    display: block;
+  }
+
+  #previous_event_card {
+    flex-direction: row;
+    width: 75%;
+    margin: 80px auto;
+  }
+
+  #previous_event_card .event_card {
+    height: 300px;
+  }
+
+  .sponsors {
+    display: none;
+  }
+
+  footer {
+    height: 90px;
+    background-color: #f9f9f9;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    gap: 30px;
+    padding: 30px 0;
+  }
+
+  #about-footer {
+    padding: 60px 0;
+    background-color: #272a31;
+    color: #fff;
+  }
+
+  #about-footer .final-parag p {
+    color: #fff;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .about_header_section .title,
+  #header_section .title {
+    width: 60%;
+  }
+
+  .about_header_section .introduction,
+  #header_section .introduction {
+    width: 45%;
+  }
+
+  .festival_programs {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@keyframes rotateX {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(180deg);
   }
 }
